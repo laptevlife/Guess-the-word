@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  background: #082969;
+  min-width: 1000px; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; }
+
+.wrap {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .wrap .word {
+    display: flex; }
+    .wrap .word .letter {
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      background: #CCCCAA; }
+  .wrap .letters {
+    display: flex; }
+    .wrap .letters .letter {
+      width: 46px;
+      height: 46px;
+      border: 2px solid green;
+      border-radius: 5px;
+      background: #000;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer; }
+  .wrap .img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .wrap .img img {
+      border: 4px solid black;
+      border-radius: 10px;
+      width: auto;
+      height: 100%;
+      object-fit: contain; }
+  .wrap .help {
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .wrap .help div {
+      color: white; }
+    .wrap .help .counter {
+      margin-right: 20px;
+      width: 170px; }
+    .wrap .help .timer {
+      margin-left: 20px;
+      width: 170px; }
+  .wrap button {
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: white; }
+
+.modal-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.589);
+  display: none; }
+  .modal-bg .modal-window {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .modal-bg .modal-window span {
+      font-size: 3rem; }
+
+.modal-bg.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
